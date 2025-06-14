@@ -6,37 +6,37 @@ import { Card, CardContent } from '@/components/ui/card';
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Maria Rodriguez",
-      condition: "General Consultation",
+      name: "মোহাম্মদ করিম",
+      business: "করিম জেনারেল স্টোর",
       rating: 5,
-      text: "TeleMedica saved me so much time! I was able to consult with Dr. Johnson from my home and received excellent care. The platform is user-friendly and secure.",
+      text: "ডিজিটাল খাতা ব্যবহার করার পর আমার দোকানের হিসাব রাখা অনেক সহজ হয়ে গেছে। আগে কাগজের খাতায় ভুল হতো, এখন সব স্বয়ংক্রিয় হিসাব হয়।",
       image: "/placeholder.svg"
     },
     {
-      name: "David Kim",
-      condition: "Mental Health",
+      name: "সালমা বেগম",
+      business: "সালমা ট্রেডার্স",
       rating: 5,
-      text: "The mental health support I received was outstanding. Dr. Wilson was very understanding and professional. I felt comfortable discussing my concerns.",
+      text: "বাকির খাতা রাখা এখন খুবই সহজ। কোন গ্রাহকের কত টাকা বাকি আছে সব মোবাইলেই দেখতে পাই। গ্রাহকরাও খুশি কারণ হিসাব পরিষ্কার।",
       image: "/placeholder.svg"
     },
     {
-      name: "Sarah Thompson",
-      condition: "Dermatology",
+      name: "আব্দুল রহমান",
+      business: "রহমান ইলেকট্রনিক্স",
       rating: 5,
-      text: "I was skeptical about online dermatology consultations, but Dr. Rodriguez was thorough and provided clear guidance. My skin condition improved significantly.",
+      text: "স্টক ব্যবস্থাপনা অনেক ভালো হয়েছে। কোন পণ্য কম হয়ে গেলে অ্যাপ জানিয়ে দেয়। ব্যবসায় অনেক উন্নতি হয়েছে।",
       image: "/placeholder.svg"
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id="testimonials" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            What Our Patients Say
+            দোকানদারদের মতামত
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Hear from real patients who have experienced quality healthcare through our telemedicine platform.
+            আমাদের ডিজিটাল খাতা ব্যবহার করে সফল হওয়া দোকানদারদের সত্যিকারের অভিজ্ঞতা শুনুন।
           </p>
         </div>
 
@@ -45,7 +45,7 @@ const TestimonialsSection = () => {
             <Card key={index} className="hover:shadow-lg transition-shadow">
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
-                  <Quote className="h-8 w-8 text-blue-600 mr-3" />
+                  <Quote className="h-8 w-8 text-green-600 mr-3" />
                   <div className="flex">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="h-4 w-4 text-yellow-500 fill-current" />
@@ -65,12 +65,29 @@ const TestimonialsSection = () => {
                   />
                   <div>
                     <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-sm text-gray-500">{testimonial.condition}</div>
+                    <div className="text-sm text-gray-500">{testimonial.business}</div>
                   </div>
                 </div>
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        <div className="mt-16 bg-green-50 rounded-2xl p-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            আপনিও সফল হন
+          </h3>
+          <p className="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
+            হাজারো দোকানদার ইতিমধ্যে আমাদের ডিজিটাল খাতা ব্যবহার করে তাদের ব্যবসা আরও ভালোভাবে পরিচালনা করছেন। আপনিও যোগ দিন।
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-lg font-medium">
+              বিনামূল্যে শুরু করুন
+            </button>
+            <button className="border border-green-600 text-green-600 hover:bg-green-50 px-8 py-3 rounded-lg font-medium">
+              ডেমো বুক করুন
+            </button>
+          </div>
         </div>
       </div>
     </section>
