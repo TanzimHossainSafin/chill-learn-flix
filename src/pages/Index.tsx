@@ -1,22 +1,24 @@
 
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import InvestmentDashboard from "@/components/InvestmentDashboard";
-import GameSection from "@/components/GameSection";
-import AIInsights from "@/components/AIInsights";
-import CommunitySection from "@/components/CommunitySection";
-import TradingInterface from "@/components/TradingInterface";
+import FeaturesSection from "@/components/FeaturesSection";
+import ServicesSection from "@/components/ServicesSection";
+import DoctorsSection from "@/components/DoctorsSection";
+import AppointmentSection from "@/components/AppointmentSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-black text-white">
+    <div className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      <InvestmentDashboard />
-      <TradingInterface />
-      <AIInsights />
-      <GameSection />
-      <CommunitySection />
+      <FeaturesSection />
+      <ServicesSection />
+      <DoctorsSection />
+      <AppointmentSection />
+      <TestimonialsSection />
+      <Footer />
     </div>
   );
 };
