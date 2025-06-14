@@ -1,10 +1,10 @@
 
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import DashboardSection from "@/components/DashboardSection";
-import TemplatesSection from "@/components/TemplatesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+import DoctorsSection from "@/components/DoctorsSection";
+import PharmacySection from "@/components/PharmacySection";
+import EmergencySection from "@/components/EmergencySection";
+import SearchSection from "@/components/SearchSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -12,10 +12,10 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      <FeaturesSection />
-      <DashboardSection />
-      <TemplatesSection />
-      <TestimonialsSection />
+      <SearchSection />
+      <DoctorsSection />
+      <PharmacySection />
+      <EmergencySection />
       <Footer />
     </div>
   );
